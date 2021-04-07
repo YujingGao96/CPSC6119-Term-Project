@@ -1,7 +1,7 @@
 package yujing.spring2021.term_project;
 
 public abstract class MenuItem {
-    private String description;
+    String description;
 
     public abstract String getDescription();
 

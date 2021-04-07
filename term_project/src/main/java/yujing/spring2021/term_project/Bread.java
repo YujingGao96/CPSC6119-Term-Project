@@ -7,10 +7,6 @@ public abstract class Bread extends MenuItem {
     public Bread() {
     }
 
-    public Bread(ToastedBehavior toastedBehavior) {
-        this.toastedBehavior = toastedBehavior;
-    }
-
     public abstract double cost();
 
     public void setToastedBehavior(ToastedBehavior toastedBehavior) {
