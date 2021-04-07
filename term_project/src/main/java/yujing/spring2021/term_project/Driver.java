@@ -14,8 +14,8 @@ import java.awt.*;
  */
 public class Driver {
     public static void main(String[] args) {
-        MenuItem item = new Chicken(new Tomato(new Cucumber(new ItalianBread(new LightlyToasted()))));
+        MenuItem item = new Tuna(new Chicken(new Tomato(new Cucumber(new ItalianBread(new LightlyToasted())))));
         System.out.println(item.getDescription());
-
+        System.out.println(item.getTotalPrice());
     }
 }

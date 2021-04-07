@@ -6,4 +6,8 @@ public abstract class MenuItem {
     public abstract String getDescription();
 
     public abstract double cost();
+
+    public String getTotalPrice(){
+        return "Total price is: $" + cost();
+    }
 }

@@ -1,0 +1,321 @@
+@startuml
+
+title __TERM_PROJECT's Class Diagram__\n
+
+  namespace yujing.spring2021.term_project {
+    class yujing.spring2021.term_project.Bacon {
+        + Bacon()
+        + cost()
+        + getDescription()
+    }
+  }
+  
+
+  namespace yujing.spring2021.term_project {
+    class yujing.spring2021.term_project.BarbecueSauce {
+        + BarbecueSauce()
+        + cost()
+        + getDescription()
+    }
+  }
+  
+
+  namespace yujing.spring2021.term_project {
+    class yujing.spring2021.term_project.Beef {
+        + Beef()
+        + cost()
+        + getDescription()
+    }
+  }
+  
+
+  namespace yujing.spring2021.term_project {
+    class yujing.spring2021.term_project.BlackOlives {
+        + BlackOlives()
+        + cost()
+        + getDescription()
+    }
+  }
+  
+
+  namespace yujing.spring2021.term_project {
+    abstract class yujing.spring2021.term_project.Bread {
+        ~ description : String
+        + Bread()
+        {abstract} + cost()
+        + getDescription()
+        + setToastedBehavior()
+    }
+  }
+  
+
+  namespace yujing.spring2021.term_project {
+    class yujing.spring2021.term_project.BuffaloSauce {
+        + BuffaloSauce()
+        + cost()
+        + getDescription()
+    }
+  }
+  
+
+  namespace yujing.spring2021.term_project {
+    class yujing.spring2021.term_project.Chicken {
+        + Chicken()
+        + cost()
+        + getDescription()
+    }
+  }
+  
+
+  namespace yujing.spring2021.term_project {
+    class yujing.spring2021.term_project.Cucumber {
+        + Cucumber()
+        + cost()
+        + getDescription()
+    }
+  }
+  
+
+  namespace yujing.spring2021.term_project {
+    class yujing.spring2021.term_project.Driver {
+        {static} + main()
+    }
+  }
+  
+
+  namespace yujing.spring2021.term_project {
+    class yujing.spring2021.term_project.GreenPepper {
+        + GreenPepper()
+        + cost()
+        + getDescription()
+    }
+  }
+  
+
+  namespace yujing.spring2021.term_project {
+    class yujing.spring2021.term_project.Ham {
+        + Ham()
+        + cost()
+        + getDescription()
+    }
+  }
+  
+
+  namespace yujing.spring2021.term_project {
+    class yujing.spring2021.term_project.HeavilyToasted {
+        - behaviorName : String
+        + HeavilyToasted()
+        + toast()
+    }
+  }
+  
+
+  namespace yujing.spring2021.term_project {
+    class yujing.spring2021.term_project.HerbsAndCheeseBread {
+        + HerbsAndCheeseBread()
+        + HerbsAndCheeseBread()
+        + cost()
+        + getDescription()
+    }
+  }
+  
+
+  namespace yujing.spring2021.term_project {
+    class yujing.spring2021.term_project.HoneyMustardSauce {
+        + HoneyMustardSauce()
+        + cost()
+        + getDescription()
+    }
+  }
+  
+
+  namespace yujing.spring2021.term_project {
+    class yujing.spring2021.term_project.HouseSandwichSauce {
+        + HouseSandwichSauce()
+        + cost()
+        + getDescription()
+    }
+  }
+  
+
+  namespace yujing.spring2021.term_project {
+    class yujing.spring2021.term_project.ItalianBread {
+        + ItalianBread()
+        + ItalianBread()
+        + cost()
+        + getDescription()
+    }
+  }
+  
+
+  namespace yujing.spring2021.term_project {
+    class yujing.spring2021.term_project.Lettuce {
+        + Lettuce()
+        + cost()
+        + getDescription()
+    }
+  }
+  
+
+  namespace yujing.spring2021.term_project {
+    class yujing.spring2021.term_project.LightlyToasted {
+        - behaviorName : String
+        + LightlyToasted()
+        + toast()
+    }
+  }
+  
+
+  namespace yujing.spring2021.term_project {
+    class yujing.spring2021.term_project.MeatBalls {
+        + MeatBalls()
+        + cost()
+        + getDescription()
+    }
+  }
+  
+
+  namespace yujing.spring2021.term_project {
+    abstract class yujing.spring2021.term_project.MenuItem {
+        ~ description : String
+        {abstract} + cost()
+        {abstract} + getDescription()
+    }
+  }
+  
+
+  namespace yujing.spring2021.term_project {
+    abstract class yujing.spring2021.term_project.MenuItemDecorator {
+    }
+  }
+  
+
+  namespace yujing.spring2021.term_project {
+    class yujing.spring2021.term_project.NineGrainWheatBread {
+        + NineGrainWheatBread()
+        + NineGrainWheatBread()
+        + cost()
+        + getDescription()
+    }
+  }
+  
+
+  namespace yujing.spring2021.term_project {
+    class yujing.spring2021.term_project.NotToasted {
+        - behaviorName : String
+        + NotToasted()
+        + toast()
+    }
+  }
+  
+
+  namespace yujing.spring2021.term_project {
+    class yujing.spring2021.term_project.Onions {
+        + Onions()
+        + cost()
+        + getDescription()
+    }
+  }
+  
+
+  namespace yujing.spring2021.term_project {
+    class yujing.spring2021.term_project.Pepperoni {
+        + Pepperoni()
+        + cost()
+        + getDescription()
+    }
+  }
+  
+
+  namespace yujing.spring2021.term_project {
+    class yujing.spring2021.term_project.Pickle {
+        + Pickle()
+        + cost()
+        + getDescription()
+    }
+  }
+  
+
+  namespace yujing.spring2021.term_project {
+    class yujing.spring2021.term_project.SaltAndPepper {
+        + SaltAndPepper()
+        + cost()
+        + getDescription()
+    }
+  }
+  
+
+  namespace yujing.spring2021.term_project {
+    interface yujing.spring2021.term_project.ToastedBehavior {
+        {abstract} + toast()
+    }
+  }
+  
+
+  namespace yujing.spring2021.term_project {
+    class yujing.spring2021.term_project.Tomato {
+        + Tomato()
+        + cost()
+        + getDescription()
+    }
+  }
+  
+
+  namespace yujing.spring2021.term_project {
+    class yujing.spring2021.term_project.Tuna {
+        + Tuna()
+        + cost()
+        + getDescription()
+    }
+  }
+  
+
+  namespace yujing.spring2021.term_project {
+    class yujing.spring2021.term_project.Turkey {
+        + Turkey()
+        + cost()
+        + getDescription()
+    }
+  }
+  
+
+  yujing.spring2021.term_project.Bacon -up-|> yujing.spring2021.term_project.MenuItemDecorator
+  yujing.spring2021.term_project.BarbecueSauce -up-|> yujing.spring2021.term_project.MenuItemDecorator
+  yujing.spring2021.term_project.Beef -up-|> yujing.spring2021.term_project.MenuItemDecorator
+  yujing.spring2021.term_project.BlackOlives -up-|> yujing.spring2021.term_project.MenuItemDecorator
+  yujing.spring2021.term_project.Bread -up-|> yujing.spring2021.term_project.MenuItem
+  yujing.spring2021.term_project.Bread o-- yujing.spring2021.term_project.ToastedBehavior : toastedBehavior
+  yujing.spring2021.term_project.BuffaloSauce -up-|> yujing.spring2021.term_project.MenuItemDecorator
+  yujing.spring2021.term_project.Chicken -up-|> yujing.spring2021.term_project.MenuItemDecorator
+  yujing.spring2021.term_project.Cucumber -up-|> yujing.spring2021.term_project.MenuItemDecorator
+  yujing.spring2021.term_project.GreenPepper -up-|> yujing.spring2021.term_project.MenuItemDecorator
+  yujing.spring2021.term_project.Ham -up-|> yujing.spring2021.term_project.MenuItemDecorator
+  yujing.spring2021.term_project.HeavilyToasted .up.|> yujing.spring2021.term_project.ToastedBehavior
+  yujing.spring2021.term_project.HerbsAndCheeseBread -up-|> yujing.spring2021.term_project.Bread
+  yujing.spring2021.term_project.HoneyMustardSauce -up-|> yujing.spring2021.term_project.MenuItemDecorator
+  yujing.spring2021.term_project.HouseSandwichSauce -up-|> yujing.spring2021.term_project.MenuItemDecorator
+  yujing.spring2021.term_project.ItalianBread -up-|> yujing.spring2021.term_project.Bread
+  yujing.spring2021.term_project.Lettuce -up-|> yujing.spring2021.term_project.MenuItemDecorator
+  yujing.spring2021.term_project.LightlyToasted .up.|> yujing.spring2021.term_project.ToastedBehavior
+  yujing.spring2021.term_project.MeatBalls -up-|> yujing.spring2021.term_project.MenuItemDecorator
+  yujing.spring2021.term_project.MenuItemDecorator -up-|> yujing.spring2021.term_project.MenuItem
+  yujing.spring2021.term_project.MenuItemDecorator o-- yujing.spring2021.term_project.MenuItem : menuItem
+  yujing.spring2021.term_project.NineGrainWheatBread -up-|> yujing.spring2021.term_project.Bread
+  yujing.spring2021.term_project.NotToasted .up.|> yujing.spring2021.term_project.ToastedBehavior
+  yujing.spring2021.term_project.Onions -up-|> yujing.spring2021.term_project.MenuItemDecorator
+  yujing.spring2021.term_project.Pepperoni -up-|> yujing.spring2021.term_project.MenuItemDecorator
+  yujing.spring2021.term_project.Pickle -up-|> yujing.spring2021.term_project.MenuItemDecorator
+  yujing.spring2021.term_project.SaltAndPepper -up-|> yujing.spring2021.term_project.MenuItemDecorator
+  yujing.spring2021.term_project.Tomato -up-|> yujing.spring2021.term_project.MenuItemDecorator
+  yujing.spring2021.term_project.Tuna -up-|> yujing.spring2021.term_project.MenuItemDecorator
+  yujing.spring2021.term_project.Turkey -up-|> yujing.spring2021.term_project.MenuItemDecorator
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml
