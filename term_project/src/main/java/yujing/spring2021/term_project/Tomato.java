@@ -7,12 +7,8 @@ public class Tomato extends MenuItemDecorator{
     }
 
     @Override
-    public String getDescription() {
-        return menuItem.getDescription() + "\n\t- " + this.description;
-    }
-
-    @Override
     public double cost() {
         return menuItem.cost() + 0.20;
     }
+
 }
