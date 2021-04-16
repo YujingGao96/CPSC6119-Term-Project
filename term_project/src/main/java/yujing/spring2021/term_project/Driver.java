@@ -14,8 +14,9 @@ import java.awt.*;
  */
 public class Driver {
     public static void main(String[] args) {
-        MenuItem item = new Tuna(new Chicken(new Tomato(new Cucumber(new ItalianBread(new LightlyToasted())))));
-        System.out.println(item.getDescription());
-        System.out.println(item.getTotalPrice());
+        SimpleSandwichFactory factory = new SimpleSandwichFactory();
+        MenuItem menuItem = factory.createSandwich("italian bread", "lightly toasted", "turkey", "tomato", "cucumber", "lettuce", "ham");
+        System.out.println(menuItem.getDescription());
+        System.out.println(menuItem.getTotalPrice());
     }
 }

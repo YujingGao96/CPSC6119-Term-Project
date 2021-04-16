@@ -6,10 +6,7 @@ public class Pickle extends MenuItemDecorator{
         this.description = "Pickle";
     }
 
-    @Override
-    public String getDescription() {
-        return menuItem.getDescription() + "\n\t- " + this.description;
-    }
+
 
     @Override
     public double cost() {
