@@ -1,0 +1,26 @@
+=============  2021/04/17 01:07:41  =============
+Lightly Toasted Herbs and Cheese Bread
+	+ Bacon
+	+ Chicken
+	+ Tuna
+	+ Cucumber
+	+ Onions
+	+ Tomato
+	+ Pickle
+	+ Barbecue Sauce
+	+ Lettuce
+Total price is: $16.45
+=================================================
+=============  2021/04/17 01:11:12  =============
+Heavily Toasted Herbs and Cheese Bread
+	+ Beef
+	+ Ham
+	+ Cucumber
+	+ Black Olives
+	+ Pickle
+	+ Salt and Pepper
+	+ House Sandwich Sauce
+	+ Tuna
+	+ Ham
+Total price is: $19.7
+=================================================
