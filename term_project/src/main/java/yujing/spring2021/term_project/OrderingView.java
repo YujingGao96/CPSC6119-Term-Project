@@ -50,8 +50,10 @@ public class OrderingView implements WorkingMenuItemObserver, ActionListener {
             try {
                 controller.confirmOrder();
                 JDialog orderStatus = new JDialog(viewFrame, "Order Status");
-                orderStatus.add(new Label("Order has been placed!", SwingConstants.CENTER));
-                orderStatus.setSize(200, 200);
+                orderStatus.add(new Label("Your order has been successfully placed!", SwingConstants.CENTER));
+                orderStatus.setLocationRelativeTo(viewFrame);
+                orderStatus.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
+                orderStatus.setSize(300, 100);
                 orderStatus.setVisible(true);
             } catch (IOException ioException) {
                 ioException.printStackTrace();
