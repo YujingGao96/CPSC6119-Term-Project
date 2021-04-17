@@ -15,6 +15,6 @@ public abstract class Bread extends MenuItem {
 
     @Override
     public String getDescription() {
-        return description;
+        return (toastedBehavior == null ? "" : toastedBehavior.toast()) + " " + description;
     }
 }

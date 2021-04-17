@@ -5,7 +5,7 @@ public abstract class MenuItemDecorator extends MenuItem {
 
     @Override
     public String getDescription() {
-        return menuItem.getDescription() + "\n\t- " + this.description;
+        return menuItem.getDescription() + "\n\t+ " + this.description;
     }
 
 }

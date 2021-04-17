@@ -1,7 +1,9 @@
 package yujing.spring2021.term_project;
 
+import java.util.ArrayList;
+
 public class SimpleSandwichFactory {
-    public MenuItem createSandwich(String breadType, String toastedBehavior, String... addOns) {
+    public MenuItem createSandwich(String breadType, String toastedBehavior, ArrayList<String> addOns) {
         Bread bread = createBread(breadType);
         ToastedBehavior toasted = createToastingBehavior(toastedBehavior);
         if (bread != null) {
@@ -12,24 +14,28 @@ public class SimpleSandwichFactory {
     }
 
     private Bread createBread(String breadType) {
+        if (breadType == null)
+            return null;
         return switch (breadType) {
             case "herbs and cheese bread" -> new HerbsAndCheeseBread();
             case "italian bread" -> new ItalianBread();
             case "nine grain wheat bread" -> new NineGrainWheatBread();
-            default -> throw new IllegalStateException("Unexpected value: " + breadType);
+            default -> null;
         };
     }
 
     private ToastedBehavior createToastingBehavior(String toastingBehavior) {
+        if (toastingBehavior == null)
+            return null;
         return switch (toastingBehavior) {
             case "not toasted" -> new NotToasted();
             case "lightly toasted" -> new LightlyToasted();
             case "heavily toasted" -> new HeavilyToasted();
-            default -> throw new IllegalStateException("Unexpected value: " + toastingBehavior);
+            default -> null;
         };
     }
 
-    private MenuItem addAddOns(Bread bread, String[] addOns){
+    private MenuItem addAddOns(Bread bread, ArrayList<String> addOns){
         MenuItem finalProduct = bread;
         for (String addOn : addOns){
             switch (addOn) {

@@ -12,11 +12,6 @@ public class ItalianBread extends Bread{
     }
 
     @Override
-    public String getDescription() {
-        return toastedBehavior.toast() + " " + super.getDescription();
-    }
-
-    @Override
     public double cost() {
         return 4.15;
     }
