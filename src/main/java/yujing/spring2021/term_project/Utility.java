@@ -11,4 +11,9 @@ public class Utility {
         bd = bd.setScale(places, RoundingMode.HALF_UP);
         return bd.doubleValue();
     }
+
+    public static String formatDescription(String description) {
+        return "<html>" + description.replace("\n", "<br/>").replace("\t", "&nbsp;&nbsp;&nbsp;&nbsp;") + "</html>";
+    }
+
 }

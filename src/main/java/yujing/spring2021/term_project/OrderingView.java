@@ -55,6 +55,7 @@ public class OrderingView implements WorkingMenuItemObserver, ActionListener {
     JButton honeyMustardSauce;
     JButton houseSandwichSauce;
     JButton saltAndPepper;
+
     public OrderingView(OrderingModelInterface model, ControllerInteface controller) {
         this.model = model;
         this.controller = controller;
@@ -110,16 +111,12 @@ public class OrderingView implements WorkingMenuItemObserver, ActionListener {
     public void updateOrder() {
         MenuItem currentItem = model.getCurrentMenuItem();
         if (currentItem != null) {
-            workingItem.setText(formatDescription(currentItem.getDescription()));
+            workingItem.setText(Utility.formatDescription(currentItem.getDescription()));
             workingItemTotal.setText(currentItem.getTotalPrice());
         } else {
             workingItem.setText("Choose a bread from the left to get started.");
             workingItemTotal.setText("Total price is: $ 0.00");
         }
-    }
-
-    private String formatDescription(String description) {
-        return "<html>" + description.replace("\n", "<br/>").replace("\t", "&nbsp;&nbsp;&nbsp;&nbsp;") + "</html>";
     }
 
     public void createView() {
