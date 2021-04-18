@@ -22,8 +22,8 @@ public class OrderingController implements ControllerInteface {
     }
 
     @Override
-    public void addAddOns(String addons) {
-        model.addAddOn(addons);
+    public void addAddOn(String addon) {
+        model.addAddOn(addon);
     }
 
     @Override
