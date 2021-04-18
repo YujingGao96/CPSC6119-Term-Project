@@ -8,6 +8,6 @@ public class GreenPepper extends MenuItemDecorator {
 
     @Override
     public double cost() {
-        return menuItem.cost() + 0.20;
+        return menuItem.cost() + 0.25;
     }
 }

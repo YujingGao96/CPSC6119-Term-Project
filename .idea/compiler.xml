@@ -7,9 +7,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="term_project" />
+        <module name="CPSC6119-Term-Project" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="CPSC6119-Term-Project" target="14" />
       <module name="term_project" target="14" />
     </bytecodeTargetLevel>
   </component>
