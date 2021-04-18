@@ -8,11 +8,11 @@ import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 
 public class WorkStation implements OrderingModelInterface {
-    SimpleSandwichFactory simpleSandwichFactory;
-    ArrayList<WorkingMenuItemObserver> observers;
-    String breadType;
-    String toastingBehavior;
-    ArrayList<String> addOns;
+    private SimpleSandwichFactory simpleSandwichFactory;
+    private ArrayList<WorkingMenuItemObserver> observers;
+    private String breadType;
+    private String toastingBehavior;
+    private ArrayList<String> addOns;
 
     public WorkStation() {
         simpleSandwichFactory = new SimpleSandwichFactory();
