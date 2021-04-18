@@ -7,7 +7,7 @@ public interface ControllerInteface {
 
     void setToasting(String toasting);
 
-    void addAddOns(String addons);
+    void addAddOn(String addon);
 
     void startOver();
 
