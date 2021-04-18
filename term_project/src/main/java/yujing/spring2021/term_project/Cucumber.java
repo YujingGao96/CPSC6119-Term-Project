@@ -1,6 +1,6 @@
 package yujing.spring2021.term_project;
 
-public class Cucumber extends MenuItemDecorator{
+public class Cucumber extends MenuItemDecorator {
 
     public Cucumber(MenuItem menuItem) {
         this.menuItem = menuItem;

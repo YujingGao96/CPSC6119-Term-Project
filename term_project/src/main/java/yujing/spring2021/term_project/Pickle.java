@@ -1,11 +1,10 @@
 package yujing.spring2021.term_project;
 
-public class Pickle extends MenuItemDecorator{
+public class Pickle extends MenuItemDecorator {
     public Pickle(MenuItem menuItem) {
         this.menuItem = menuItem;
         this.description = "Pickle";
     }
-
 
 
     @Override

@@ -1,6 +1,6 @@
 package yujing.spring2021.term_project;
 
-public class HeavilyToasted implements ToastedBehavior{
+public class HeavilyToasted implements ToastedBehavior {
     private final String behaviorName;
 
     public HeavilyToasted() {

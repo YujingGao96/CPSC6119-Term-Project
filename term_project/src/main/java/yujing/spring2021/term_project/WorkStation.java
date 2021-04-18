@@ -53,7 +53,7 @@ public class WorkStation implements OrderingModelInterface {
     }
 
     @Override
-    public void placeOrder(){
+    public void placeOrder() {
         PrintStream out = null;
         try {
             out = new PrintStream(new FileOutputStream("output.txt", true), true);
