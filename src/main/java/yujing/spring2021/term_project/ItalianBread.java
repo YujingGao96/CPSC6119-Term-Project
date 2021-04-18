@@ -13,6 +13,6 @@ public class ItalianBread extends Bread {
 
     @Override
     public double cost() {
-        return 4.15;
+        return 4.25;
     }
 }

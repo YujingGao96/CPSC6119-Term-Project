@@ -1,0 +1,9 @@
+=============  2021/04/18 15:09:47  =============
+Not Toasted Italian Bread
+	+ Beef
+	+ Pepperoni
+	+ Turkey
+	+ Tuna
+	+ Tomato
+Total price is: $18.45
+=================================================
