@@ -1,7 +1,5 @@
 package yujing.spring2021.term_project;
 
-import java.io.IOException;
-
 public class OrderingController implements ControllerInteface {
     OrderingModelInterface model;
     OrderingView view;

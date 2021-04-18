@@ -9,7 +9,52 @@ import java.io.IOException;
 public class OrderingView implements WorkingMenuItemObserver, ActionListener {
     OrderingModelInterface model;
     ControllerInteface controller;
-
+    // UI View Components
+    JFrame viewFrame;
+    JPanel viewPanel;
+    JPanel leftPanel;
+    JPanel rightPanel;
+    JPanel lowerRightPanel;
+    JPanel buttonsPanel;
+    JPanel breadsPanel;
+    JPanel toastedPanel;
+    JPanel addOnsPanel1;
+    JPanel addOnsPanel2;
+    JPanel addOnsPanel3;
+    JPanel addOnsPanel4;
+    JPanel addOnsPanel5;
+    JPanel addOnsPanel6;
+    JPanel addOnsPanel7;
+    JLabel workingItem;
+    JLabel workingItemTotal;
+    JButton cancel;
+    JButton confirm;
+    JButton italianBread;
+    JButton nineGrainWheatBread;
+    JButton herbsAndCheeseBread;
+    JButton notToasted;
+    JButton lightlyToasted;
+    JButton heavilyToasted;
+    JButton bacon;
+    JButton beef;
+    JButton chicken;
+    JButton ham;
+    JButton meatBalls;
+    JButton pepperoni;
+    JButton tuna;
+    JButton turkey;
+    JButton cucumber;
+    JButton greenPepper;
+    JButton lettuce;
+    JButton onions;
+    JButton tomato;
+    JButton pickle;
+    JButton blackOlives;
+    JButton barbecueSauce;
+    JButton buffaloSauce;
+    JButton honeyMustardSauce;
+    JButton houseSandwichSauce;
+    JButton saltAndPepper;
     public OrderingView(OrderingModelInterface model, ControllerInteface controller) {
         this.model = model;
         this.controller = controller;
@@ -76,53 +121,6 @@ public class OrderingView implements WorkingMenuItemObserver, ActionListener {
     private String formatDescription(String description) {
         return "<html>" + description.replace("\n", "<br/>").replace("\t", "&nbsp;&nbsp;&nbsp;&nbsp;") + "</html>";
     }
-
-    // UI View Components
-    JFrame viewFrame;
-    JPanel viewPanel;
-    JPanel leftPanel;
-    JPanel rightPanel;
-    JPanel lowerRightPanel;
-    JPanel buttonsPanel;
-    JPanel breadsPanel;
-    JPanel toastedPanel;
-    JPanel addOnsPanel1;
-    JPanel addOnsPanel2;
-    JPanel addOnsPanel3;
-    JPanel addOnsPanel4;
-    JPanel addOnsPanel5;
-    JPanel addOnsPanel6;
-    JPanel addOnsPanel7;
-    JLabel workingItem;
-    JLabel workingItemTotal;
-    JButton cancel;
-    JButton confirm;
-    JButton italianBread;
-    JButton nineGrainWheatBread;
-    JButton herbsAndCheeseBread;
-    JButton notToasted;
-    JButton lightlyToasted;
-    JButton heavilyToasted;
-    JButton bacon;
-    JButton beef;
-    JButton chicken;
-    JButton ham;
-    JButton meatBalls;
-    JButton pepperoni;
-    JButton tuna;
-    JButton turkey;
-    JButton cucumber;
-    JButton greenPepper;
-    JButton lettuce;
-    JButton onions;
-    JButton tomato;
-    JButton pickle;
-    JButton blackOlives;
-    JButton barbecueSauce;
-    JButton buffaloSauce;
-    JButton honeyMustardSauce;
-    JButton houseSandwichSauce;
-    JButton saltAndPepper;
 
     public void createView() {
         // Frame

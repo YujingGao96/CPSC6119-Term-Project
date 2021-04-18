@@ -1,8 +1,5 @@
 package yujing.spring2021.term_project;
 
-import java.math.BigDecimal;
-import java.math.RoundingMode;
-
 public abstract class MenuItem {
     String description;
 

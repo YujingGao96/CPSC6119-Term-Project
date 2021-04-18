@@ -35,9 +35,9 @@ public class SimpleSandwichFactory {
         };
     }
 
-    private MenuItem addAddOns(Bread bread, ArrayList<String> addOns){
+    private MenuItem addAddOns(Bread bread, ArrayList<String> addOns) {
         MenuItem finalProduct = bread;
-        for (String addOn : addOns){
+        for (String addOn : addOns) {
             switch (addOn) {
                 case "bacon" -> finalProduct = new Bacon(finalProduct);
                 case "beef" -> finalProduct = new Beef(finalProduct);
